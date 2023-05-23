@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Квадратні рівняння/Види</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    background-color: palevioletred;
+}
+.header {
+    background-color:palevioletred;
+    border-bottom: 2px solid orchid;
+    height: 200px; 
+    display: flex;
+    align-items: center;
+   }
+
+.button_header {
+    background-color: plum;
+    color: palevioletred;
+    padding: 10px 20px;
+    border: royalblue;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    
+}
+.title {
+    background-color:palevioletred;
+    height: 500px;;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-top: 2px solid whitesmoke;
+}
+.title h1 {
+   font-size: 60px;
+   margin-right: 10px;
+   margin-top: 0px;
+   color: white; 
+}
+.title h3 {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-top: 0px;
+    color: white; 
+ }
+.footer {
+    background-color: whitesmoke;
+    height: 115px;
+}
+.title h2 {
+    font-size: 70px;
+    text-align: center;
+    color: azure;
+}
+.title h4 {
+    color: aliceblue; 
+    font-family: Cambria; 
+    text-align: center; 
+    font-size: 50px;
+}
+        </style>
+</head>
+<body>
+    <div class="body">
+    <h1 style="color: aliceblue; font-family: Cambria; text-align: center; font-size: 70px;">Неповні квадратні рівняння</h1>
+    <p style="color: aliceblue; font-family: Cambria; text-align: center; font-size: 50px;">Неповні квадратні рівняння мають два види:</p>
+
+    <ol style="color: aliceblue; font-family: Cambria; text-align: left; font-size: 20px;">
+        <li>Якщо с=0 , 𝑎𝑥<sup>2</sup>+𝑏𝑥=0 </br>
+            Розв’язати таке рівняння можна розклавши на множники (винести за дужки х):
+            𝑥∙(𝑎𝑥+𝑏)=0 <br>
+            𝑥=0  або (𝑎𝑥+𝑏)=0 <br>
+            Отже, один корінь дорівнює 0, а другий корінь
+             𝑥=(−𝑏)/𝑎 
+              (оскільки добуток двох чисел дорівнює 0 лише тоді, коли хоча б один із множників дорівнює 0)
+            </li>
+        <li>Якщо 𝑏=0,𝑎𝑥<sup>2</sup>+𝑐=0 <br>
+            Розв’язати таке рівняння можна добуваючи корінь із кожної частини рівняння:
+            (𝑎𝑥)<sup>2</sup>=−𝑐 <br>
+            
+            𝑥<sup>2</sup>=(−𝑐)/𝑎                   |<br>
+            Добуваючи корінь із лівої частини рівняння отримуємо 𝑥 за модулем |𝑥|=√((−𝑐)/𝑎). Це означає що: 
+            𝑥<sub>1</sub>=√((−𝑐)/𝑎)  ;      𝑥<sub>2</sub>=−√((−𝑐)/𝑎)</li>
+    </ol>
+<p style="color: aliceblue; font-family: Cambria; text-align: left; font-size: 40px;">Ми з тобою вже звикли, що корені квадратного рівняння а𝑥<sup>2</sup>+𝑏𝑥+𝑐=0  можна визначити за формулою:
+     𝑥<sub>1,2</sub>=(−𝑏±√(𝑏<sup>2</sup>−4𝑎𝑐))/2𝑎, звісно це можливо, якщо дискримінант 𝐷=𝑏<sup>2</sup>−4𝑎𝑐 − невід’ємне число, якщо ж  𝐷<0 
+      формула не має сенсу, а квадратне рівняння не має дійсних коренів </p>
+<p style="color: aliceblue; font-family: Cambria; text-align: left; font-size: 40px;">Але математики ніколи не оминають можливості полегшити собі обчислення. 
+    Вони виявили, що формулу 𝑥<sub>1,2</sub>=(−𝑏±√(𝑏<sup>2</sup>−4𝑎𝑐))/2𝑎 можна спростити у випадку, коли коефіцієнт 𝑏 є парним числом </br>
+    Нехай у <a href="./holosariy.html">квадратного рівняння</a> а𝑥<sup>2</sup>+𝑏𝑥+𝑐=0  коефіцієнт 𝑏 має вигляд  𝑏=2𝑘 </br>
+    Корені квадратного рівняння можна обчислити за формулою:  </br> 
+   <div> <img src="Mal_4.png"alt="формула" Align="centr"></img> </p></div>
+    <h3 style="color:lemonchiffon; font-family: Cambria; text-align: left; font-size: 20px;">У чому переваги? </h3>
+    <ol style="color:lemonchiffon; font-family: Cambria; text-align: left; font-size: 20px;">
+        <li>По-перше, до квадрату підноситься не саме число 𝑏, а його половина 𝑘=𝑏/2
+        </li>
+        <li>По-друге, віднімається з цього квадрату не 4𝑎𝑐, а просто 𝑎𝑐
+        </li>
+        <li>По-третє, у знаменнику міститься не 2𝑎 , а просто 𝑎
+
+            Особливо приємно формула виглядає для випадку коли 𝑎=1, тоді отримуємо:𝑥<sub>1,2</sub>=−𝑘±√(𝑘<sup>2</sup>−𝑎𝑐)
+            Це формула коренів рівняння 𝑥<sup>2</sup>+2𝑘𝑥−𝑐=0</li>
+    </ol>
+    <div class="button">
+        <button class="button_header" onclick="document.location='zmist.html'"> повернутись до змісту</button>
+        </div>
+</body>
+</html>
